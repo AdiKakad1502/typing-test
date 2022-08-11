@@ -45,8 +45,40 @@ body{
 
 .content-box .content{
     display: flex;
+    margin-top: 17px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
 }
 
 .content.result{
     display: flex;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+
+.result li{
+    display:flex;
+    list-style: none;
+    height: 22px;
+    align-items: center;
+}
+
+.result li :not(:first-child){
+    border-left: 1px solid #ccc;
+    padding-left: 22px;
+}
+.result li :not(:first-child) span{
+    font-weight: 500;
+}
+.result li p {
+    font-size: 18px;
+}
+.result li span{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.result li b{
+    font-weight: 500;
 }
